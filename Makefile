@@ -13,7 +13,7 @@ objects = aes.o main.o
 
 # headers files 
 
-headers = aes.h
+headers = aes.h AESConstants.h
 
 AR 		= ar
 ARFLAGS 	= rvs
