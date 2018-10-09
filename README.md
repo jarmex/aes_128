@@ -6,10 +6,15 @@ more information will be added later.
 
 ### Compile
 ```sh
-make
+make 
+```
+
+### Run Program
+On Linux or Mac machine, run this command after the make
+```sh
+./aes128
 ```
 
 ## Dependencies
 
 + The code is written in standard C++
-+ The pthread library is used
