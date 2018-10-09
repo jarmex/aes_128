@@ -5,15 +5,15 @@ LIBPATH = ./lib
 
 # the source files 
 
-sources = aes.cc main.cc
+sources = aes.cc main.cc userdata.cc
 
 # objects are the same as the source files with .cc replaced with .o
 
-objects = aes.o main.o
+objects = aes.o main.o userdata.o
 
 # headers files 
 
-headers = aes.h AESConstants.h
+headers = aes.h AESConstants.h userdata.h
 
 AR 		= ar
 ARFLAGS 	= rvs
@@ -23,7 +23,7 @@ CXX 		= g++
 CXXFLAGS	= -O
 CCFLAGS 	= -O
 LIB_DIRS = 
-LIBS 		= -lpthread #-lefence
+#LIBS 		= -lpthread #-lefence
 
 exec = aes128
 

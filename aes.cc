@@ -191,7 +191,7 @@ void aesencrypt(unsigned char *message, unsigned char *expandedKey)
 
   // copy the encrypted message from the state
 
-  for (int i = 0; i < 16; i++)
+  for (int i = 0; i < AES_BLOCK_SIZE; i++)
   {
     message[i] = state[i];
   }
