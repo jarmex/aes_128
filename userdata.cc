@@ -117,7 +117,7 @@ void EncryptFile()
   string line;
   while (getline(readfile, line))
   {
-    usrinput += line ;
+    usrinput += line  + '\r';
   }
   readfile.close();
   cout << usrinput << endl;

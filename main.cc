@@ -19,10 +19,10 @@ void aesprototyping()
   unsigned char expandedKey[AES_ROUND_KEY_SIZE];
   unsigned char message[] = "This is a message we will encrypt with AES!";
   unsigned char key[] = "ThisisMyPassword";
-  string test = "ThisisMyPassword";
-  cout << test.length() << " +1 " << test.length() + 1 << endl;
+
 
   int originalLen = strlen((const char *)message);
+
   int lenOfPaddingMessage = originalLen;
   // PKCS#5 padding.
   // Padding is a sequence of identical bytes, each has value
@@ -40,7 +40,7 @@ void aesprototyping()
   for (int i = 0; i < lenOfPaddingMessage; i++)
   {
     if (i >= originalLen)
-      paddedMessage[i] = paddednum;
+      paddedMessage[i] = 0;
     else
       paddedMessage[i] = message[i];
   }
@@ -78,5 +78,6 @@ int main()
 {
   GetUserInput();
   EncryptFile();
+  // aesprototyping();
   return 0;
 }

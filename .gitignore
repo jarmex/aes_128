@@ -1,2 +1,4 @@
 # ignore all files with extension o.
 *.o
+*.txt
+aes128
