@@ -18,3 +18,6 @@ On Linux or Mac machine, run this command after the make
 ## Dependencies
 
 + The code is written in standard C++
+
+## License
+MIT
